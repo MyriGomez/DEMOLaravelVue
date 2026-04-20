@@ -1,0 +1,81 @@
+# ======================
+# 🔐 VARIABLES DE ENTORNO / SECRETOS
+# ======================
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+id_rsa*
+auth.json
+.secret*
+
+# ======================
+# 🐳 DOCKER
+# ======================
+.docker/
+*.env.docker
+docker/.env
+docker-compose.override.yml
+docker-data/
+db-data/
+
+# ======================
+# 🧱 LARAVEL
+# ======================
+/vendor/
+/node_modules/
+/public/build/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/oauth-*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*.php
+
+# ======================
+# 🎨 VUE
+# ======================
+node_modules/
+dist/
+coverage/
+vite.svg
+
+# ======================
+# 🧠 IDEs
+# ======================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.eclipse
+.classpath
+.project
+.settings/
+
+# ======================
+# 📄 LOGS
+# ======================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# 💻 OS
+# ======================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ======================
+# 🧹 TEMP
+# ======================
+*.tmp
+*.swp
+*~
