@@ -45,5 +45,15 @@ services:
     volumes:
       - db-data:/var/lib/mysql
 
+  adminer:
+    image: adminer:latest
+    container_name: adminer_db
+    ports:
+      - "18081:8080"
+    depends_on:
+      - db
+    environment:
+      - ADMINER_DEFAULT_SERVER=db
+
 volumes:
   db-data:
